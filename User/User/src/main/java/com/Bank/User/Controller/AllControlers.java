@@ -10,10 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.Bank.User.Controller.Services.AccountServices;
 import com.Bank.User.Controller.entity.User;
 
+@RestController
 public class AllControlers {
 	
-	@RestController
-	public class myController {
 		
 		@Autowired
 		private AccountServices accountServices; 
@@ -61,5 +60,4 @@ public class AllControlers {
 				return user;
 
 		}
-	}
 }
